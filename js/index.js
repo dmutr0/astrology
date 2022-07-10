@@ -1,0 +1,1 @@
+(()=>{"use strict";function t(t){const e=t.currentTarget.parentElement.nextSibling;t.currentTarget.classList.toggle("program__btn_active"),e.classList.toggle("program__webinars_active")}document.querySelectorAll(".program__btn").forEach((e=>e.addEventListener("click",t)))})();
