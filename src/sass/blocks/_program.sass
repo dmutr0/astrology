@@ -1,0 +1,61 @@
+.program
+	padding: 64px 0 56px 0
+	min-height: 750px
+	background-color: #524981
+	transition: 1.6s all
+	&__steps
+		margin-top: 46px
+	&__step
+		display: flex
+		align-items: center
+		margin-top: 20px
+	&__btn
+		height: 37px
+		transition: .5s all
+		&:hover
+			cursor: pointer
+		&_active
+			transform: rotate(90deg)
+	&__step-number
+		font-size: 34px
+		font-weight: 700
+		color: #fff
+		margin-right: 15px
+	&__webinars
+		font-size: 18px
+		color: #fff
+		padding-left: 4px
+		list-style-type: none
+		font-weight: 400
+		max-height: 160px
+		overflow: hidden
+		transition: 1.6s all
+		li
+			margin-top: 8px
+			visibility: hidden
+			opacity: 0
+			transition: 1.6s all
+			&.visible
+				visibility: visible
+				opacity: 1
+			&.more
+				display: flex
+				height: 5px
+				div
+					margin: 0 3px
+					width: 5px
+					background-color: #fff
+					border-radius: 50%
+				transition: .8s all
+		&_active
+			max-height: 550px
+			li
+				visibility: visible
+				opacity: 1
+				&.more
+					visibility: hidden
+					opacity: 0
+					height: 0px
+					margin-top: 0
+				
+	
