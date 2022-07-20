@@ -1,14 +1,43 @@
 .button
 	font-family: "Comfortaa"
 	font-size: 17px
+	color: #fff
+	border: none
 	height: 54px
 	width: 250px
 	background: linear-gradient(180deg, #9c73b9, #815c9c)
 	display: flex
 	align-items: center
 	justify-content: center
+	padding: 10px
 	margin-top: 40px
 	border-radius: 10px
 	transition: .4s all
+	text-transform: uppercase
+	position: relative
+	overflow: hidden
 	&:hover
-		transform: scale(1.05)
+		transform: translateY(-6px)
+	&_mini
+		height: 48px
+		width: 200px
+		margin: 0 auto
+		margin-top: 18px
+		text-transform: uppercase
+		transition: .6s all
+		&::before
+			content: ""
+			position: absolute
+			width: 28px
+			height: 28px
+			background: url("../icons/buy.svg") center center/cover no-repeat
+			top: 50%
+			transform: translate(0, -50%)
+			overflow: hidden
+			left: -40px
+			transition: .6s all
+		&:hover
+			padding-left: 35px
+			transform: none
+			&::before
+				left: 15px

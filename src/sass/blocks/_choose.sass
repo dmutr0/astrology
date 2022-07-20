@@ -1,0 +1,136 @@
+.choose
+	padding: 98px 0 88px 0
+	min-height: 600px
+	background: $main-color
+	&__descr
+		margin-top: 30px
+		font-size: 20px
+		padding: 0 100px 0 100px
+		color: #fff
+		text-align: justify
+	&__wrapper
+		display: flex
+		justify-content: center
+		margin-top: 48px
+	&__item
+		margin: 0 75px
+		width: 390px
+		background-color: #5c5291
+		border-radius: 15px
+		padding: 40px 0 25px 0
+		min-height: 500px
+		position: relative
+	&__subtitle
+		font-weight: 700
+		font-size: 26px
+		text-align: center
+		color: #e8e8e8
+		text-transform: uppercase
+		line-height: 26px
+		&_vip
+			font-size: 28px
+			color: #ffff7f
+			position: relative
+			&::before
+				content: ""
+				position: absolute
+				background: url("../icons/star.svg") center center/cover no-repeat
+				width: 30px
+				height: 30px
+				top: 50%
+				left: 50%
+				transform: translateX(calc(-50% - 50px)) translateY(-50%)
+	&__price
+		text-align: center
+		margin-top: 12px
+		color: #fff
+		font-weight: 300
+		font-size: 19px
+	&__discount
+		color: #ffffae
+		font-weight: 700
+		cursor: default
+	&__hidden-content
+		position: absolute
+		top: 74px
+		left: 50%
+		transform: translateX(-50%)
+		width: 340px
+		padding: 20px
+		background-color: $dynamic-color
+		color: #fff
+		font-size: 17px
+		border-radius: 15px
+		z-index: 333
+		visibility: hidden
+		opacity: 0
+		transition: .8s all
+		cursor: default
+		&_active
+			visibility: visible
+			opacity: 1
+	&__list
+		margin: 0
+		padding: 0
+		list-style-type: none
+		color: #fff
+		font-size: 19px
+		margin-top: 15px
+		line-height: 23px
+		font-weight: 400
+		padding: 0 25px 0 61px
+		li
+			margin-top: 18px
+			position: relative
+			&::before
+				content: ""
+				position: absolute
+				height: 28px
+				width: 28px
+				left: -36px
+				top: -1px
+				background: url("../icons/check.svg") center center/cover no-repeat
+			&.unavailable
+				color: hsl(26, 93%, 78%)
+				&::before
+					background: url("../icons/unavailable.svg") center center/cover no-repeat
+	&__toggler
+		height: 26px
+		margin-left: 10px
+		cursor: pointer
+		transition: .8s all
+		&_active
+			transform: rotate(-90deg)
+	&__second-list
+		transition: .8s all
+		list-style-type: none
+		position: absolute
+		background-color: $dynamic-color
+		font-size: 17px
+		padding-left: 0
+		width: 360px
+		left: -46px
+		bottom: 41px
+		border-radius: 15px
+		padding: 10px 12px 10px 12px
+		font-size: 17px
+		font-weight: 300
+		visibility: hidden
+		opacity: 0
+		&_active
+			visibility: visible
+			opacity: 1
+		li
+			margin-top: 8px
+			&::before
+				display: none
+			&:first-child
+				margin-top: 0
+	hr
+		margin: 0 auto
+		margin-top: 24px
+		width: 90%
+		background-color: #342c5a
+		height: 2px
+	&__li-toggler
+		cursor: pointer
