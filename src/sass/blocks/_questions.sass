@@ -9,33 +9,43 @@
 		margin-top: 60px
 	&__item
 		margin-top: 36px
-		border-top: 2px #5b75b3 solid
-		border-bottom: 2px #5b75b3 solid
+		border-top: 2px #685bb3 solid
+		border-bottom: 2px #685bb3 solid
 		padding: 15px 0 10px 0
-		transition: .6s all
 	&__content
 		display: flex
 		justify-content: space-between
 		align-items: center
 		cursor: pointer
 	&__plus
-		height: 100%
-		transition: .6s all
+		width: 48px
+		transition: .8s all
 		&_active
 			transform: rotate(-45deg)
 	&__subtitle
 		font-size: 22px
 		font-weight: 700
+		text-transform: uppercase
 	&__answer
-		
-		font-size: 19px
+		font-size: 20px
 		font-weight: 300
 		visibility: hidden
 		max-height: 0
-		transition: .6s all
+		transition: .8s all
 		overflow: hidden
+		margin-top: 10px
 		&_active
-			
 			visibility: visible
-			max-height: 130px
-			margin-top: 20px
+			max-height: 35px
+			&.large
+				max-height: 130px
+			&.medium
+				max-height: 65px
+	&__link
+		font-size: 22px
+		font-weight: 400
+		text-decoration: underline
+		text-underline-position: under
+		color: #fff
+		&:hover
+			text-decoration: underline
