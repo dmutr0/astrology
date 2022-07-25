@@ -1,0 +1,28 @@
+@media(max-width: 967px)
+	.questions
+		padding-left: 25px
+		padding-right: 25px
+		&__answer
+			&_active
+				&.large
+					max-height: 155px
+				&.medium
+					max-height: 90px
+
+@media(max-width: 767px)
+	.questions
+		&__answer
+			visibility: visible
+			max-height: 300px
+			&_active
+				max-height: 300px
+				&.large, &.medium
+					max-height: 300px
+		&__plus
+			display: none
+
+@media(max-width: 575px)
+	.questions
+		padding: 68px 25px 58px 25px
+		&__subtitle
+			font-size: 18px

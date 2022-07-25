@@ -1,8 +1,11 @@
 export function toggleList(e) {
 	const list = e.currentTarget.parentElement.querySelector("ul");
 	const toggler = e.currentTarget.parentElement.querySelector(".choose__toggler");
-	toggler.classList.toggle("choose__toggler_active");
-	list.classList.toggle("choose__second-list_active");
+	if (e.target.classList.length !== 0) {
+		console.log(e.target.classList)
+		toggler.classList.toggle("choose__toggler_active");
+		list.classList.toggle("choose__second-list_active");
+	}
 }
 
 export function showContent(e) {

@@ -1,0 +1,36 @@
+@media(max-width: 1199px)
+	.about-me
+		&__wrapper
+			grid-template-columns: repeat(2, 400px)
+		&__list
+			font-size: 22px
+		&__img
+			height: 490px
+
+@media(max-width: 967px)
+	.about-me
+		padding-left: 25px
+		padding-right: 25px
+		&__wrapper
+			grid-template-columns: repeat(2, 1fr)
+		&__list
+			font-size: 19px
+		&__img
+			height: 450px
+
+@media(max-width: 767px)
+	.about-me
+		&__list
+			font-size: 15px
+		&__img
+			height: 360px
+
+@media(max-width: 575px)
+	.about-me
+		padding: 68px 25px 58px 25px
+		&__img
+			height: 300px
+			justify-self: center
+		&__wrapper
+			grid-template-columns: 1fr
+		
